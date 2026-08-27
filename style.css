@@ -1,0 +1,776 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {    
+    font-family: 'Plus Jakarta Sans', sans-serif;
+   background-color:#191919;
+}
+
+
+header {
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    padding: 15px;
+    border-radius: 40px;
+    border: 2px solid white;
+    margin-top: 30px;
+    box-shadow: 0 0 5px white;
+    backdrop-filter: blur(10px);
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px ;
+    font-weight: 700;  
+}
+
+nav a:hover {
+    scale: 1.2;
+    transition: all 0.5s ease;
+}
+
+
+/* main */
+
+.glow-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, rgba(0,0,0,0) 70%);
+  transform: translate(-50%, -50%); 
+  pointer-events: none;            
+}
+
+
+
+/* hero sec */
+#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    height: 100vh;
+}
+
+.hero {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    margin: 20px 0px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+
+.btn {
+    padding: 10px 15px ;
+    border: 2px solid white;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+    scale: 1.1;
+    transition: all 0.5s ease;
+}
+
+
+.gambar {
+    border-radius: 30px;
+}
+
+.gambar img {
+    border-radius: 80px 10px 80px 10px;
+    border:2px solid white;
+    transition: all 0.5s ease;
+}
+.gambar img:hover {
+    border-radius: 10px 80px 10px 80px;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    rotate: -10deg;
+    scale: 1.1;
+}
+
+
+/* skill */
+
+#skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom   : 50px;
+    background-color: rgb(0, 0, 0);
+}
+
+.autoshow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.fadein {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+#skill h1{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+}
+
+#skill p {
+    width: 50%;
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    width: 95%;
+    color: white;
+}
+
+
+
+.img-skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 30px;
+    height: 50vh;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 20%;
+    transition: all 0.5s ease;
+}
+.skill:hover {
+    scale: 1.1;
+    background-color: white;
+    color: black;
+}
+#skill .skill:hover p,
+.skill:hover p,
+.skill:hover h3,
+.skill:hover span {
+    color: black;
+}
+
+#testi {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#testi h1{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+}
+.testimoni {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+}
+
+
+
+
+.card {
+    border: 2px solid white;
+    padding: 25px;
+    border-radius: 20px;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 10px;
+}
+
+.card p {
+    text-align: justify;
+    color: white;
+    font-size: small;
+}
+
+
+.card img {
+    border-radius: 20%;
+}
+
+.card h3{
+    color: white;
+}
+
+.card h6 {
+    color: lightgray;
+    font-weight: 300;
+    color: white;
+}
+
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+    transition: all 0.5s ease;
+    translate: 0px -10px;
+}
+
+/* contact */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100% ;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom   : 50px;
+}
+
+#contact h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#contact p {
+    width: 50%;
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    width: 80%;
+    color: white;
+}
+
+.contact-contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+}
+.sosmed {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+#contact .sosmed h3 {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+.media {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+
+#contact .media i,
+.media i {
+    color: black;
+}
+
+#contact .media p,
+.media p {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+.act {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+/* mail phone */
+.act input {
+    height: 50px;
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+}
+.act input::placeholder,
+.input-name::placeholder,
+.form textarea::placeholder {
+    color: gray;
+    font-weight: 700;
+    font-size: 18px;
+}
+.act input:hover,
+.input-name:hover,
+.form textarea:hover {
+    color: gray;
+    font-weight: 700;
+    transform: translateY(-5px);
+
+}
+
+
+.act input:focus,
+.input-name:focus,
+.form textarea:focus {
+    outline: none;
+    border: 3px solid rgb(255, 162, 0);
+    font-weight: 700;
+    font-size: 18px;
+    transform: translateY(-5px);
+}
+
+
+/* name */
+.input-name {
+    height: 50px;
+    width: 100% ;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+
+}
+
+/* textarea */
+
+.form textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    margin-top: 20px;
+    border-radius: 20px;   
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* submit button */
+.btn-submit {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.02);
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 20px;
+    height: 30vh;
+}
+
+.footer .med {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 20px;
+}
+
+.footer .med i{
+    font-size: 25px;
+    color: white;
+    transition: all 0.3s ease;
+}
+.footer .med i:hover{
+    scale: 1.2;
+    color: blue;
+}
+
+.footer .med img{
+    width: 100px;
+}
+.footer h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    /* nav */
+    .header {
+        width: 90%;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        margin: 15px auto;
+        padding: 15px 20px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    /* Home */
+    #home {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 40px 20px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .hero {
+        width: 100%;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .button {
+        justify-content: center;
+    }
+
+    .gambar img {
+        width: 250px;
+        max-width: 100%;
+        height: auto;
+    
+    }
+
+
+    /* skill */
+
+    #skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #skill h1 {
+        font-size: 30px;
+    }
+    #skill p {
+        font-size: 15px;
+    }
+
+    .img-skill {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        padding: 20px;
+        height: auto;
+    }
+    .skill {
+        width: 60px;
+        height: 60px;
+        aspect-ratio: 1 / 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 16px;
+    }
+    .skill img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 0;
+    }
+    .skill p {
+        display: none;
+    }
+
+
+    /* testi */
+
+    #testi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 5px;
+    }
+    
+
+/* contact */
+
+    #contact{
+        width: 100%;
+        margin: 0 a
+    }
+
+    #contact p {
+        width: 90%;
+    }
+
+    .contact {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .form {
+        width: 100%;
+    }
+    .contact-contain {
+        padding: 0;
+    }
+
+    .act {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .act input {
+        width: 100%;
+    }
+
+    .sosmed {
+        width: 100%;
+        padding: 25px;
+    }
+
+    iframe {
+        width: 600px;
+    }
+
+    /* footer */
+    
+    .footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        padding: 30px 15px;
+    }
+
+    .footer .med {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h2 {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .gambar img {
+        width: 200px;
+    }
+
+
+
+    .contact {
+        padding: 15px 10px;
+    }
+    #contact h1 {
+        font-size: 30px;
+    }
+    #contact p {
+        font-size: 15px;
+    }
+
+    .form textarea {
+        height: 120px;
+    }
+
+    .sosmed h3 {
+        font-size: 18px;
+    }
+
+    .media p {
+        font-size: 13px;
+    }
+
+        iframe {
+        width: 280px;
+    }
+
+    .footer h3 {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
